@@ -1,0 +1,23 @@
+{
+  "name": "mat-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --open=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwidcit/mat-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwidcit/mat-starter/issues"
+  },
+  "homepage": "https://github.com/uwidcit/mat-starter#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
