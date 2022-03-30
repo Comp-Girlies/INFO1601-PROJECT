@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template App</title>
+    <title>Test Page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -12,11 +12,35 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <style>
+      nav{
+        background-color: #00A8CC;
+      }
+      body{
+        background-color: #191A19;
+        color: aliceblue;
+        background: 
+          conic-gradient(
+            #082032 90deg,
+            #191A19 90deg 180deg,
+            #082032 180deg 270deg,
+            #191A19 270deg
+        )
+        top left / 60px 60px repeat;
+      }
+      #table{
+          background-color: #6E85B2;
+          border: 1px solid black;
+      }
+      #title {
+        text-align: center;
+      }
+    </style>
 </head>
 <body>
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
+          <a id='title' href="#" class="brand-logo">Jared's Playground</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="page2.html">Page 2</a></li>
@@ -25,13 +49,12 @@
       </nav>
         
       <main class="container"c>
-        <h1 style="text-align: center;">Signup Form</h1>
-         
+        <h1 style="text-align: center;">TOP ANIME</h1>
       </div>
-      <table>
+      <!-- <table id="table">
         <thead>
              <tr>
-                <th>#</th>
+                <th></th>
                 <th>name</th>
                 <th>Type</th>
                 <th>website</th>
@@ -40,8 +63,20 @@
                <tbody id="result">
                                              
                </tbody>
-        </table>
-        <div id="image"></div>
+        </table> -->
+        <div>
+          <div style='float: left;' id="image"></div>
+          <div style='float: left;' id="image2"></div>
+        </div>
+        <div>
+          <div id="poster1"></div>
+          <div id="poster2"></div>
+        </div>
+        <br>
+        <div id="top">
+
+        </div>
+        
     <script>
          M.AutoInit();
     </script>
