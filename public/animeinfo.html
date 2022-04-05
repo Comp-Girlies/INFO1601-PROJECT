@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Details</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
+    <style>
+
+        .nav-wrapper {
+          background-color: rgb(29, 78, 100);
+        }
+
+        body{
+        background-color: #191A19;
+        color: aliceblue;
+        background: 
+          conic-gradient(
+            #082032 90deg,
+            #191A19 90deg 180deg,
+            #082032 180deg 270deg,
+            #191A19 270deg
+        )
+        top left / 60px 60px repeat;
+        }
+
+    </style>
+</head>
+<body>
+  <nav class="nav-extended">
+    <!-- Nav Bar -->
+    <div class="nav-wrapper">
+        <!-- Logo -->
+      <a href="#" class="brand-logo">Aniratings</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="anime.html">Anime</a></li>
+        <li class="active"><a href="manga.html">Manga</a></li>
+        <!-- Search Bar -->
+        <li><div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                    <input id="search" type="search" required="" style="height: 200.600;height: 60px;">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    
+                    <i class="material-icons">close</i>
+                    </div>
+              </form>
+            </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Nav Bar Extended -->
+    <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <!-- <li class="tab"><a href="#top_manga">Top Rated Manga</a></li>
+          <li class="tab"><a href="#trending_manga">Trending Manga</a></li>
+          <li class="tab"><a href="#manga_search">   Manga Search</a></li> -->
+          
+
+        </ul>
+      </div>
+
+  </nav>
+
+        <!-- Mobile Side Nav Code -->
+        <ul class="sidenav" id="mobile-demo">
+          <li>
+              <div class="nav-wrapper">
+              <form>
+                  <div class="input-field">
+                  <input id="search" placeholder="Search" type="search" required="" style="height: 40px;">
+                  <label class="label-icon" style="height: 60px;" for="search"><i class="material-icons">search</i></label>
+                  
+                  <i class="material-icons">close</i>
+                  </div>
+            </form>
+              </div>
+          </li>
+          
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="anime.html">Anime</a></li>
+          <li><a href="manga.html">Manga</a></li>
+    
+      </ul>
+
+      <h1>This webpage is to be used to display detailed info on an anime.</h1>
+
+    <script>
+         M.AutoInit();
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+      });
+    </script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
