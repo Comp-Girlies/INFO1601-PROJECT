@@ -96,12 +96,52 @@
         
       <main class="container"c>
 
-        <!-- PLEASE INSERT a heading 2 line below-->
-      <div style="text-align: center;">
-        <h2>Top Rated Anime</h2>
-        
-  
+       
+        <h1 style="text-align: center;">TOP RATED ANIME</h1>
       </div>
+      <!-- <table id="table">
+        <thead>
+             <tr>
+                <th></th>
+                <th>name</th>
+                <th>Type</th>
+                <th>website</th>
+             </tr>
+             </thead>
+               <tbody id="result">
+                                             
+               </tbody>
+        </table> -->
+        <div>
+          <div style= 'float: left;' id="image"></div>
+          <div style='float: left;' id="image2"></div>
+        </div>
+        <div>
+          <div id="poster1"></div>
+          <div id="poster2"></div>
+        </div>
+        <br>
+        <div id="top">
+
+       </div>
+
+      <!--   
+        (maybe this is how to display the top anime)
+
+        <div>
+        <img src="${record3.data[i].images.jpg.image_url}" alt="${record3.data[i].title} Image"></img>
+        </div>
+        <div>
+            <h5>${record3.data[i].title}</h5>
+        </div>
+        <div>
+          <h5>Rating: (rating)/10</h5>
+        </div>
+        <div>
+          <h5> Just space to give it some breathing room</h5>
+        </div>
+
+      -->
       
       </main>
 
@@ -115,6 +155,7 @@
       var instances = M.Sidenav.init(elems, {});
       });
     </script>
+    <script src="main.js"></script>
     
 </body>
 </html>
