@@ -35,35 +35,62 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Aniratings</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li ><a href="testpage.html">Jared's Playground</a></li>
-            <li ><a href="search.html">Search</a></li>
-            <li >             
-              <details>
-                <summary>
-                  Anime                   
-                </summary>
-                <a href="topratedanime.html">Top Rated Anime</a>
-                <a href="topratedanimebc.html">Top Rated Anime by category</a>
-              </details>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="nav-extended">
+    <!-- Nav Bar -->
+    <div class="nav-wrapper">
+        <!-- Logo -->
+      <a href="#" class="brand-logo">Aniratings</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="topratedanime.html">Anime</a></li>
+        <li><a href="#">Manga</a></li>
+        <!-- Search Bar -->
+        <li><div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                    <input id="search" type="search" required="" style="height: 200.600;height: 60px;">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    
+                    <i class="material-icons">close</i>
+                    </div>
+              </form>
+            </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Nav Bar Extended -->
+    <div class="nav-content">
+        <ul class="tabs tabs-transparent">
 
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Anime</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+          <li class="tab"><a href="topratedanime.html">Top Rated Anime</a></li>
+          <li class="tab"><a class="active" href="#test2">Trending Anime</a></li>
+          <li class="tab disabled"><a href="#test3">Other Anime</a></li>
+        </ul>
       </div>
 
+  </nav>
+
+        <!-- Mobile Side Nav Code -->
+        <ul class="sidenav" id="mobile-demo">
+          <li>
+              <div class="nav-wrapper">
+              <form>
+                  <div class="input-field">
+                  <input id="search" placeholder="Search" type="search" required="" style="height: 40px;">
+                  <label class="label-icon" style="height: 60px;" for="search"><i class="material-icons">search</i></label>
+                  
+                  <i class="material-icons">close</i>
+                  </div>
+            </form>
+              </div>
+          </li>
+          
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topratedanime.html">Anime</a></li>
+          <li><a href="#">Manga</a></li>
+    
+      </ul>
         
         
       <main class="container"c>
@@ -81,6 +108,12 @@
 
     <script>
          M.AutoInit();
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+      });
     </script>
     
 </body>
