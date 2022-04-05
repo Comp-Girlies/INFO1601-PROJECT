@@ -40,7 +40,6 @@ function displayAnimeData(aniData){
                 <h5>${aniData.data[i].title}</h5>
             </div>
             `
-        
         }
     result.innerHTML = html;//add html string to DOM
 }
