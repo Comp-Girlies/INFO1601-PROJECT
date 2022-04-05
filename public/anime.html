@@ -32,11 +32,9 @@
         top left / 60px 60px repeat;
         }
 
-
     </style>
 </head>
 <body>
- 
   <nav class="nav-extended">
     <!-- Nav Bar -->
     <div class="nav-wrapper">
@@ -44,8 +42,8 @@
       <a href="#" class="brand-logo">Aniratings</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class="active" ><a href="index.html">Home</a></li>
-        <li ><a href="anime.html">Anime</a></li>
+        <li ><a href="index.html">Home</a></li>
+        <li class="active"><a href="anime.html">Anime</a></li>
         <li><a href="manga.html">Manga</a></li>
         <!-- Search Bar -->
         <li><div class="nav-wrapper">
@@ -64,9 +62,10 @@
     <!-- Nav Bar Extended -->
     <div class="nav-content">
         <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="#top_anime">Top Rated Anime</a></li>
+          <li class="tab"><a href="#trending_anime">Trending Anime</a></li>
+          <li class="tab"><a href="#anime_search"> Anime Search</a></li>
 
-          <li class="tab"><a href="#home">Section 1</a></li>
-          <li class="tab"><a href="#home2">Section 2</a></li>
         </ul>
       </div>
 
@@ -87,29 +86,60 @@
               </div>
           </li>
           
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="anime.html">Anime</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="anime.html">Anime</a></li>
           <li><a href="manga.html">Manga</a></li>
     
       </ul>
+
         
+      <div id="top_anime"> 
+        <main class="container"c>
+
         
-      <main class="container"c>
+          <h1 style="text-align: center;">TOP RATED ANIME</h1>
+        </div>
+          <div>
+            <div style= 'float: left;' id="image"></div>
+            <div style='float: left;' id="image2"></div>
+          </div>
+          <div>
+            <div id="poster1"></div>
+            <div id="poster2"></div>
+          </div>
+          <br>
+          <div id="top">
 
-        <!-- PLEASE INSERT a heading 2 line below-->
-      <div id="home" style="text-align: center;">
-        <h2>&#x2728;Welcome to Aniratings&#x2728;</h2>
-        <h3>Please note that this site is currrently under development :)</h3>
-        <img src="https://media.giphy.com/media/AceKHfcUrqauQ/giphy.gif" alt="">
-  
-      </div>
+          </div>
 
-      <div id="home2">
-        <h1>Hello</h1>
-      </div>
-      
-      </main>
+        <!--   
+          (maybe this is how to display the top anime)
 
+          <div>
+          <img src="${record3.data[i].images.jpg.image_url}" alt="${record3.data[i].title} Image"></img>
+          </div>
+          <div>
+              <h5>${record3.data[i].title}</h5>
+          </div>
+          <div>
+            <h5>Rating: (rating)/10</h5>
+          </div>
+          <div>
+            <h5> Just space to give it some breathing room</h5>
+          </div>
+
+        -->
+        
+        </main>
+    </div>
+
+    <div id="trending_anime">
+      <h1 style="text-align: center;">TRENDING ANIME</h1>
+    </div>
+
+    <div id="anime_search">
+      <h1 style="text-align: center;">ANIME SEARCH</h1>
+    </div>
 
     <script>
          M.AutoInit();
@@ -120,6 +150,7 @@
       var instances = M.Sidenav.init(elems, {});
       });
     </script>
+    <script src="main.js"></script>
     
 </body>
 </html>

@@ -43,8 +43,8 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li ><a href="index.html">Home</a></li>
-        <li class="active"><a href="topratedanime.html">Anime</a></li>
-        <li><a href="#">Manga</a></li>
+        <li><a href="anime.html">Anime</a></li>
+        <li class="active"><a href="manga.html">Manga</a></li>
         <!-- Search Bar -->
         <li><div class="nav-wrapper">
                 <form>
@@ -62,10 +62,11 @@
     <!-- Nav Bar Extended -->
     <div class="nav-content">
         <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="#top_manga">Top Rated Manga</a></li>
+          <li class="tab"><a href="#trending_manga">Trending Manga</a></li>
+          <li class="tab"><a href="#manga_search">   Manga Search</a></li>
+          
 
-          <li class="tab"><a href="topratedanime.html">Top Rated Anime</a></li>
-          <li class="tab"><a class="active" href="#test2">Trending Anime</a></li>
-          <li class="tab disabled"><a href="#test3">Other Anime</a></li>
         </ul>
       </div>
 
@@ -87,64 +88,23 @@
           </li>
           
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="topratedanime.html">Anime</a></li>
-          <li><a href="#">Manga</a></li>
+          <li class="active"><a href="anime.html">Anime</a></li>
+          <li><a href="manga.html">Manga</a></li>
     
       </ul>
 
         
-        
-      <main class="container"c>
-
-       
-        <h1 style="text-align: center;">TOP RATED ANIME</h1>
-      </div>
-      <!-- <table id="table">
-        <thead>
-             <tr>
-                <th></th>
-                <th>name</th>
-                <th>Type</th>
-                <th>website</th>
-             </tr>
-             </thead>
-               <tbody id="result">
-                                             
-               </tbody>
-        </table> -->
-        <div>
-          <div style= 'float: left;' id="image"></div>
-          <div style='float: left;' id="image2"></div>
-        </div>
-        <div>
-          <div id="poster1"></div>
-          <div id="poster2"></div>
-        </div>
-        <br>
-        <div id="top">
-
-       </div>
-
-      <!--   
-        (maybe this is how to display the top anime)
-
-        <div>
-        <img src="${record3.data[i].images.jpg.image_url}" alt="${record3.data[i].title} Image"></img>
-        </div>
-        <div>
-            <h5>${record3.data[i].title}</h5>
-        </div>
-        <div>
-          <h5>Rating: (rating)/10</h5>
-        </div>
-        <div>
-          <h5> Just space to give it some breathing room</h5>
+        <div id="top_manga">   
+          <h1 style="text-align: center;">TOP RATED MANGA</h1>
         </div>
 
-      -->
-      
-      </main>
+        <div id="trending_manga">
+            <h1 style="text-align: center;">TRENDING MANGA</h1>
+        </div>
 
+        <div id="manga_search">
+            <h1 style="text-align: center;">MANGA SEARCH</h1>
+        </div>
 
     <script>
          M.AutoInit();
