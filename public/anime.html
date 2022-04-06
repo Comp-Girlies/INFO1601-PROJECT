@@ -32,6 +32,11 @@
         top left / 60px 60px repeat;
         }
 
+        #key{
+          width: 200px;
+          background-color: aliceblue;
+        }
+
     </style>
 </head>
 <body>
@@ -45,16 +50,15 @@
         <li ><a href="index.html">Home</a></li>
         <li class="active"><a href="anime.html">Anime</a></li>
         <li><a href="manga.html">Manga</a></li>
+
         <!-- Search Bar -->
-        <li><div class="nav-wrapper">
-                <form>
-                    <div class="input-field">
-                    <input id="search" type="search" required="" style="height: 200.600;height: 60px;">
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    
-                    <i class="material-icons">close</i>
-                    </div>
-              </form>
+        <li>
+            <div class="nav-wrapper">     
+              <div class="input-field">
+                <input id="search" type="search" required="" style="height: 200.600;height: 60px;">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
             </div>
         </li>
       </ul>
@@ -75,14 +79,12 @@
         <ul class="sidenav" id="mobile-demo">
           <li>
               <div class="nav-wrapper">
-              <form>
-                  <div class="input-field">
-                  <input id="search" placeholder="Search" type="search" required="" style="height: 40px;">
+                <div class="input-field">
+                  <input id="search3"href="#anime_search" placeholder="Search" type="search" required="" style="height: 40px;">
                   <label class="label-icon" style="height: 60px;" for="search"><i class="material-icons">search</i></label>
                   
                   <i class="material-icons">close</i>
-                  </div>
-            </form>
+                </div>
               </div>
           </li>
           
@@ -138,7 +140,25 @@
     </div>
 
     <div id="anime_search">
-      <h1 style="text-align: center;">ANIME SEARCH</h1>
+
+      <div id="search_result">
+        <center>
+          <h3>Search for Anime</h3>
+          <lord-icon
+                src="https://cdn.lordicon.com/pvbutfdk.json"
+                trigger="hover"
+                colors="primary:#ffffff"
+                state="hover"
+                style="width:50px;height:50px">
+            </lord-icon>
+          <div class="input-field">
+            <input id="search2" placeholder="Search" type="search" required="" style="background-color:aliceblue; width:50%; height: 50px;">
+            
+          </div>
+        </center>
+      </div>
+
+
     </div>
 
     <script>
@@ -151,6 +171,8 @@
       });
     </script>
     <script src="main.js"></script>
+    <script src="search.js"></script>
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     
 </body>
 </html>
