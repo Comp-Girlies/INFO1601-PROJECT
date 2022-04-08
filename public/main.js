@@ -97,10 +97,78 @@ function printFunction3(returnData3,location){
 }
 
 
+
+async function getTopAnime(location){
+    try{
+      let response = await fetch(`https://api.jikan.moe/v4/top/anime`);//1. Send http request and get response
+      let result = await response.json();//2. Get data from response;
+      console.log(result);
+      printFunction3(result,location);// 3. Do something with the data
+    
+   }catch(e){
+       console.log(e);//catch and log any errors
+   }
+ }
+
+
+ function printFunction3(AnimeData,location){
+    let result = document.querySelector(location);
+    console.log(result);
+    //add html code inside of result
+    let html = '';// create html string
+    sym_rating = printRating();
+    record = AnimeData;
+    for(i=0;i<25;i++){
+        //build html string
+        html += `
+        <div class="row">
+            <div class="col s4">
+              <a href ="animeinfo.html"> 
+              <img src="${record.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+              <h5>${record.data[i].title}</h5>
+              <h5>Rating: 8.53/10  ${sym_rating}</h5>
+            </a>
+            </div>
+        </div>
+        `
+    
+    }
+    result.innerHTML = html;//add html string to DOM
+}
+
+
 //getData2(server,'#image');
 //getData2(server3,'#image2');
 //getData3("#top");
 
+
+function printRating(rating){
+
+    let temp = rating;
+    let sym_rating = "";
+
+    while (temp > 0){
+
+        if (temp >= 1){
+            sym_rating = sym_rating + "★";
+            temp = temp -1;
+        }
+        else if (temp > 0 && temp < 1){
+            if (temp >=0.5){
+                sym_rating = sym_rating + " "; // insert half star symbol.
+                temp = 0;
+            }
+            
+            else{
+                sym_rating = sym_rating + "☆"; // insert no star symbol.
+                temp = 0;
+            }
+            
+        }
+
+    }
+    return sym_rating;
+}
 
 
 
