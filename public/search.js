@@ -76,8 +76,19 @@ function displayAnimeData(aniData){
     let result = document.querySelector('#search_result');
     console.log(result);
     console.log(aniData.data.length);
-    //add html code inside of result
-    let html = '';// create html string
+
+    if (aniData.data.length === 0){
+        let html = '';
+
+        html += `
+            <h1>No Results Found.</h1>
+            `
+        
+        result.innerHTML = html;//add html string to DOM
+    }
+    else{
+            //add html code inside of result
+        let html = '';// create html string
 
         for(i=0;i<aniData.data.length;i++){
             //build html string
@@ -90,7 +101,10 @@ function displayAnimeData(aniData){
             </div>
             `
         }
-    result.innerHTML = html;//add html string to DOM
+
+        result.innerHTML = html;//add html string to DOM
+    }
+    
 }
 
 

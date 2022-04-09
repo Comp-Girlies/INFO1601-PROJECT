@@ -123,14 +123,15 @@ async function getTopAnime(location){
         html += `
         <div class="row">
             <div class=" col s2 ">
-                <div class="card-panel card-panel grey center"
-                    <a href ="animeinfo.html"> 
-                    <img src="${AnimeData.data[i].images.jpg.image_url}" style=" width: 100%; display:inline-block;"/>
-                    <h5>${AnimeData.data[i].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                <div class="card-panel card-panel grey center">
+                    <a onclick = "test2(1)"  href ="animeinfo.html"> 
+                        <img  src="${AnimeData.data[i].images.jpg.image_url}" style=" width: 100%; display:inline-block;"/>
+                        <h5>${AnimeData.data[i].title}</h5>
+                        <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                    </a>
                  </div>
                 </div>
-            </a>
+                   
             </div>
         </div>
         `
@@ -165,6 +166,7 @@ function printRating(rating){
     }
     return sym_rating;
 }
+
 
 getTopAnime('#top_anime');
 
