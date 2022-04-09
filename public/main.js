@@ -127,7 +127,7 @@ async function getTopAnime(location){
             html += `
             <center>
             <div class="row">
-                <div class="col s4">
+                <div class="col s6 l3">
                     <div class="section"> 
                             <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
@@ -146,7 +146,7 @@ async function getTopAnime(location){
                     result.innerHTML = html;//add html string to DOM
                 }
                 else{
-                    html += `<div class="col s4">
+                    html += `<div class="col s6 l3">
                     <div class="section"> 
                             <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
@@ -167,7 +167,7 @@ async function getTopAnime(location){
                     result.innerHTML = html;//add html string to DOM
                 }
                 else{
-                    html += `<div class="col s4">
+                    html += `<div class="col s6 l3">
                     <div class="section"> 
                             <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
