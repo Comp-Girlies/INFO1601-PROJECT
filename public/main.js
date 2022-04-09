@@ -253,7 +253,6 @@ function printTrendingAnime(AnimeData,location){
                 <div class="col s4 m3">
                     <div class="section"> 
                         <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                    </div>
                         <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                         <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
