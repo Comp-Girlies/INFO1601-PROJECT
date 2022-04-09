@@ -116,28 +116,109 @@ async function getTopAnime(location){
     console.log(result);
     //add html code inside of result
     let html = '';// create html string
-    for(i=0;i<AnimeData.data.length;i++){
-        sym_rating = printRating(AnimeData.data[i].score);
-        console.log(sym_rating);
-        //build html string
-        html += `
-        <div class="row">
-            <div class=" col s2 ">
-                <div class="card-panel card-panel grey center">
-                    <a onclick = "test2(1)"  href ="animeinfo.html"> 
-                        <img  src="${AnimeData.data[i].images.jpg.image_url}" style=" width: 100%; display:inline-block;"/>
-                        <h5>${AnimeData.data[i].title}</h5>
-                        <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
-                    </a>
-                 </div>
-                </div>
-                   
-            </div>
-        </div>
-        `
-    
+    for(i=0;i<AnimeData.data.length;i = i+1){
+
+        // if (i ===AnimeData.data.length-1){
+            let sym_rating = printRating(AnimeData.data[i].score);
+            console.log(sym_rating);
+            //build html string
+            html += `
+            <div class="row">
+                <div class="col s4 m3">
+                    <div class="section"> 
+                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                            <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                    </div>
+            </div>`
+
+                result.innerHTML = html;//add html string to DOM
+        // }
+
+        // else if (i ===AnimeData.data.length-2){
+
+        //     let sym_rating = printRating(AnimeData.data[i].score);
+        //     let sym_rating2 = printRating(AnimeData.data[i+1].score);
+        //     console.log(sym_rating);
+        //     //build html string
+        //     html += `
+        //     <div class="row">
+        //         <div class="col s3">
+        //             <div class="card-panel card-panel grey center"> 
+        //                     <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+        //                     <h5>${AnimeData.data[i].title}</h5>
+        //                     <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+        //                 </a>
+                    
+        //             </div>
+                    
+        //         </div>
+        //         <div class="col s3">
+        //             <div class="card-panel card-panel grey center">
+        //                 <a href ="animeinfo.html"> 
+        //                     <img  src="${AnimeData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
+        //                     <h5>${AnimeData.data[i+1].title}</h5>
+        //                     <h5>Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>
+        //                 </a>
+        //             </div>
+                    
+                    
+        //         </div>
+        //     </div>
+        //     `
+        
+        
+        // result.innerHTML = html;//add html string to DOM
+        // }
+
+    //    else{
+    //         let sym_rating = printRating(AnimeData.data[i].score);
+    //         let sym_rating2 = printRating(AnimeData.data[i+1].score);
+    //         let sym_rating3 = printRating(AnimeData.data[i+3].score);
+    //         console.log(sym_rating);
+    //         //build html string
+    //         html += `
+    //         <div class="row">
+    //             <div class="col s3 m2">
+    //                 <div class="card-panel card-panel grey center"> 
+    //                         <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+    //                         <h5>${AnimeData.data[i].title}</h5>
+    //                         <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+    //                     </a>
+                    
+    //                 </div>
+                    
+    //             </div>
+    //             <div class="col s3 m2">
+    //                 <div class="card-panel card-panel grey center">
+    //                     <a href ="animeinfo.html"> 
+    //                         <img  src="${AnimeData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
+    //                         <h5>${AnimeData.data[i+1].title}</h5>
+    //                         <h5>Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>
+    //                     </a>
+    //                 </div>
+                    
+                    
+    //             </div>
+    //             <div class="col s3 m2">
+    //                 <div class="card-panel card-panel grey center">
+    //                     <a href ="animeinfo.html"> 
+    //                         <img  src="${AnimeData.data[i+2].images.jpg.image_url}" style="display:inline-block;"/>
+    //                         <h5>${AnimeData.data[i+2].title}</h5>
+    //                         <h5>Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>
+    //                     </a>
+    //                 </div>
+                    
+                    
+    //             </div>
+    //         </div>
+        //     `
+        
+        
+        // result.innerHTML = html;//add html string to DOM
+
+        // }
     }
-    result.innerHTML = html;//add html string to DOM
 }
 
 
