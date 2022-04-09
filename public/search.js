@@ -6,6 +6,7 @@ let query = "NULL";
 //function pulls text from search bar and stores it in variable query.
     //launches get search data
 
+
 // reads text entered in search
 var anime_key = document.getElementById("search");
 var anime_key2 = document.getElementById("search2");
@@ -28,7 +29,6 @@ anime_key3.addEventListener('keyup',searchFn3);
 //Debate to remove button?
 //click event listener for button
 //but.addEventListener('click',searchFn);
-
 
 function searchFn(single_key){
     console.log(anime_key.value);
