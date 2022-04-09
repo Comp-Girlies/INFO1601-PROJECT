@@ -103,7 +103,7 @@ async function getTopAnime(location){
       let response = await fetch(`https://api.jikan.moe/v4/top/anime`);//1. Send http request and get response
       let result = await response.json();//2. Get data from response;
       console.log(result);
-      printFunction3(result,location);// 3. Do something with the data
+      printTopAnime(result,location);// 3. Do something with the data
     
    }catch(e){
        console.log(e);//catch and log any errors
@@ -111,22 +111,25 @@ async function getTopAnime(location){
  }
 
 
- function printFunction3(AnimeData,location){
+ function printTopAnime(AnimeData,location){
     let result = document.querySelector(location);
     console.log(result);
     //add html code inside of result
     let html = '';// create html string
-    sym_rating = printRating();
-    record = AnimeData;
-    for(i=0;i<25;i++){
+    for(i=0;i<AnimeData.data.length;i++){
+        sym_rating = printRating(AnimeData.data[i].score);
+        console.log(sym_rating);
         //build html string
         html += `
         <div class="row">
-            <div class="col s4">
-              <a href ="animeinfo.html"> 
-              <img src="${record.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-              <h5>${record.data[i].title}</h5>
-              <h5>Rating: 8.53/10  ${sym_rating}</h5>
+            <div class=" col s2 ">
+                <div class="card-panel card-panel grey center"
+                    <a href ="animeinfo.html"> 
+                    <img src="${AnimeData.data[i].images.jpg.image_url}" style=" width: 100%; display:inline-block;"/>
+                    <h5>${AnimeData.data[i].title}</h5>
+                    <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                 </div>
+                </div>
             </a>
             </div>
         </div>
@@ -149,20 +152,13 @@ function printRating(rating){
 
     while (temp > 0){
 
-        if (temp >= 1){
+        if (temp >= 2){
             sym_rating = sym_rating + "★";
-            temp = temp -1;
+            temp = temp -2;
         }
-        else if (temp > 0 && temp < 1){
-            if (temp >=0.5){
-                sym_rating = sym_rating + " "; // insert half star symbol.
-                temp = 0;
-            }
-            
-            else{
-                sym_rating = sym_rating + "☆"; // insert no star symbol.
-                temp = 0;
-            }
+        else if (temp > 0 && temp < 2){
+            sym_rating = sym_rating + "☆"; // insert no star symbol.
+            temp = 0;
             
         }
 
@@ -170,7 +166,5 @@ function printRating(rating){
     return sym_rating;
 }
 
-
-
-
+getTopAnime('#top_anime');
 
