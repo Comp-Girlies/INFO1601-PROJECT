@@ -116,23 +116,74 @@ async function getTopAnime(location){
     console.log(result);
     //add html code inside of result
     let html = '';// create html string
-    for(i=0;i<AnimeData.data.length;i = i+1){
+
+    i=0;
+    while(i<AnimeData.data.length){
 
         // if (i ===AnimeData.data.length-1){
             let sym_rating = printRating(AnimeData.data[i].score);
             console.log(sym_rating);
             //build html string
             html += `
+            <center>
             <div class="row">
-                <div class="col s4 m3">
+                <div class="col s4">
                     <div class="section"> 
                             <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
-            </div>`
+                </div>`
 
                 result.innerHTML = html;//add html string to DOM
+
+                i = i + 1;
+
+                if( i >= (AnimeData.data.length -1)){
+                    html += `</div>
+                    </center>`
+
+                    result.innerHTML = html;//add html string to DOM
+                }
+                else{
+                    html += `<div class="col s4">
+                    <div class="section"> 
+                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                            <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                    </div>
+                </div>`
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
+
+                i = i + 1;
+
+                if( i >= (AnimeData.data.length -1)){
+                    html += `</div>
+                    </center>`
+
+                    result.innerHTML = html;//add html string to DOM
+                }
+                else{
+                    html += `<div class="col s4">
+                    <div class="section"> 
+                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                            <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                    </div>
+                </div>
+                </div>
+                </center>
+                `
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
+
+                i = i + 1;
+
         // }
 
         // else if (i ===AnimeData.data.length-2){
