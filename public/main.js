@@ -13,7 +13,7 @@ async function getTopAnime(location){
       let result = await response.json();//2. Get data from response;
       console.log(result);
 
-      let mql = window.matchMedia('(max-width: 600px)');
+      let mql = window.matchMedia('(max-width: 450px)');
       console.log(mql.matches);
       
       if( (mql.matches) === true){
@@ -59,6 +59,27 @@ async function getTopAnime(location){
                 </div>`
 
                 result.innerHTML = html;//add html string to DOM
+
+                i = i + 1;
+
+                if( i >= (AnimeData.data.length -1)){
+                    html += `</div>
+                    </center>`
+
+                    result.innerHTML = html;//add html string to DOM
+                }
+                else{
+                    html += `<div class="col s6 l3">
+                    <div class="section"> 
+                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                            <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                    </div>
+                </div>`
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
 
                 i = i + 1;
 
