@@ -389,8 +389,99 @@ function printRating(rating){
     return sym_rating;
 }
 
+// hello. upcoming anime here
+
+async function getUpcomingAnime(location){
+    try{
+      let response = await fetch(`https://api.jikan.moe/v4/seasons/upcoming`);//1. Send http request and get response
+      let result = await response.json();//2. Get data from response;
+      console.log(result);
+    
+    printUpcomingAnime(result,location);// 3. Do something with the data
+      
+    
+   }catch(e){
+       console.log(e);//catch and log any errors
+   }
+ }
+
+ function printUpcomingAnime(AnimeData,location){
+    let result = document.querySelector(location);
+    console.log(result);
+    //add html code inside of result
+    let html = '';// create html string
+
+    i=0;
+    while(i<AnimeData.data.length){
+
+            let sym_rating = printRating(AnimeData.data[i].score);
+            console.log(sym_rating);
+            //build html string
+            html += `
+            <div class="swiper-slide">
+            <a class="thumbTile" href="#">
+                <img class="thumbTile__image"
+                    src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                    alt="The Queen's Gambit">
+            </a>
+        </div>`
+
+                result.innerHTML = html;//add html string to DOM
+
+                i = i + 1;
+
+                if( i < (AnimeData.data.length -1)){
+                    html += ` <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                            alt="The Queen's Gambit">
+                    </a>
+                </div>`
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
+
+                i = i + 1;
+
+                if( i >= (AnimeData.data.length -1)){
+                    html += ` <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                            alt="The Queen's Gambit">
+                    </a>
+                </div>`
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
+
+                i = i + 1;
+
+                if( i >= (AnimeData.data.length -1)){
+                    html += ` <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                            alt="The Queen's Gambit">
+                    </a>
+                </div>
+                `
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
+
+                i = i + 1;
+
+    }
+}
 
 getTopAnime('#top_anime');
 getTrendingAnime('#trending_anime');
+getUpcomingAnime('#upcoming_anime') ;
+
 
 
