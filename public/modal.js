@@ -125,12 +125,12 @@
     modalhtml.innerHTML = `
             <div id="modaltest" class="modal-content">
               <div class="tab2">
-              <button class="tablinks" onclick="openInfo(event, 'anime_overview')">Anime Overview</button>
+              <button class="tablinks active" onclick="openInfo(event, 'anime_overview')">Anime Overview</button>
               <button class="tablinks" onclick="openInfo(event, 'synopsis')">Synopsis</button>
               <button class="tablinks" onclick="openInfo(event, 'other_info')">Other Info</button>
               </div>
           
-              <div id="anime_overview" class="tabcontent">
+              <div id="anime_overview" class="tabcontent" style="display: block;">
                 <div class="row">
                   <div class="col s4">
                     <img src="${AnimeData.data.images.jpg.image_url}" style="display:inline-block;"/>
@@ -145,7 +145,7 @@
           
               <div id="synopsis" class="tabcontent">
                 <h5>Synopsis:</h5>
-                <p>${AnimeData.data.synopsis}</p>
+                <p3>${AnimeData.data.synopsis}</p3>
 
               </div>
           

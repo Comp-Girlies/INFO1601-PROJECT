@@ -52,7 +52,7 @@ async function getTopAnime(location){
                 <div class="col s6 l3">
                     <div class="section"> 
                             <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                            <h5 >#hello${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                            <h5 >#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
                 </div>`
@@ -70,7 +70,7 @@ async function getTopAnime(location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -91,7 +91,7 @@ async function getTopAnime(location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})"  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -112,7 +112,7 @@ async function getTopAnime(location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})"  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -147,7 +147,7 @@ function printTopAnime2(AnimeData,location){
             <div class="row">
                 <div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -166,7 +166,7 @@ function printTopAnime2(AnimeData,location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -225,7 +225,7 @@ function printTrendingAnime(AnimeData,location){
             <div class="row">
                 <div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -244,28 +244,7 @@ function printTrendingAnime(AnimeData,location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                            <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
-                            <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
-                    </div>
-                </div>`
-
-                result.innerHTML = html;//add html string to DOM
-                    
-                }
-
-                i = i + 1;
-
-                if( i >= (AnimeData.data.length -1)){
-                    html += `</div>
-                    </center>`
-
-                    result.innerHTML = html;//add html string to DOM
-                }
-                else{
-                    html += `<div class="col s6 l3">
-                    <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -286,7 +265,28 @@ function printTrendingAnime(AnimeData,location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
+                            <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
+                    </div>
+                </div>`
+
+                result.innerHTML = html;//add html string to DOM
+                    
+                }
+
+                i = i + 1;
+
+                if( i >= (AnimeData.data.length -1)){
+                    html += `</div>
+                    </center>`
+
+                    result.innerHTML = html;//add html string to DOM
+                }
+                else{
+                    html += `<div class="col s6 l3">
+                    <div class="section"> 
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -322,7 +322,7 @@ function printTrendingAnime2(AnimeData,location){
             <div class="row">
                 <div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1} ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -341,7 +341,7 @@ function printTrendingAnime2(AnimeData,location){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>

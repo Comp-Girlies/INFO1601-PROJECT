@@ -95,7 +95,7 @@ function displayAnimeData(AnimeData){
             <div class="row">
                 <div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -114,7 +114,7 @@ function displayAnimeData(AnimeData){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -135,7 +135,7 @@ function displayAnimeData(AnimeData){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -156,7 +156,7 @@ function displayAnimeData(AnimeData){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -191,7 +191,7 @@ function displayAnimeData2(AnimeData){
             <div class="row">
                 <div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1} ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
@@ -210,7 +210,7 @@ function displayAnimeData2(AnimeData){
                 else{
                     html += `<div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
                             <h5>#${i+1}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
