@@ -33,3 +33,17 @@ body{
   #link{
     height: 75px;
   }
+
+  .nav-content{
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .nav-wrapper{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+  }
+
+  .nav-extended{
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+  }
