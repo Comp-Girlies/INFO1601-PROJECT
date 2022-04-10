@@ -421,8 +421,8 @@ async function getUpcomingAnime(location){
             <div class="swiper-slide">
             <a class="thumbTile" href="#">
                 <img class="thumbTile__image"
-                    src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
-                    alt="The Queen's Gambit">
+                    src="${AnimeData.data[i].images.jpg.image_url}"
+                    alt="${AnimeData.data[i].title}">
             </a>
         </div>`
 
@@ -434,8 +434,8 @@ async function getUpcomingAnime(location){
                     html += ` <div class="swiper-slide">
                     <a class="thumbTile" href="#">
                         <img class="thumbTile__image"
-                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
-                            alt="The Queen's Gambit">
+                            src="${AnimeData.data[i].images.jpg.image_url}"
+                            alt="${AnimeData.data[i].title}">
                     </a>
                 </div>`
 
@@ -449,8 +449,8 @@ async function getUpcomingAnime(location){
                     html += ` <div class="swiper-slide">
                     <a class="thumbTile" href="#">
                         <img class="thumbTile__image"
-                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
-                            alt="The Queen's Gambit">
+                            src="${AnimeData.data[i].images.jpg.image_url}"
+                            alt="${AnimeData.data[i].title}">
                     </a>
                 </div>`
 
@@ -464,8 +464,8 @@ async function getUpcomingAnime(location){
                     html += ` <div class="swiper-slide">
                     <a class="thumbTile" href="#">
                         <img class="thumbTile__image"
-                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
-                            alt="The Queen's Gambit">
+                            src="${AnimeData.data[i].images.jpg.image_url}"
+                            alt="${AnimeData.data[i].title}">
                     </a>
                 </div>
                 `
