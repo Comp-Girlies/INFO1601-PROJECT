@@ -89,9 +89,75 @@
       <div id="home2">
         <h1>Hello</h1>
         <br><br><br>
+        
+        <!-- test test test test-->
 
-          
+          <div class="carousel">
+            <div class="carouselbox">
+              <!-- random data here-->
+            </div>
 
+            <a class="switchLeft sliderButton"><</a>
+            <a class="switchRight sliderButton">></a>
+          </div>
+
+          <style>
+            .carousel {
+              height: 250px;
+              width: 80%;
+              position: relative ;
+            }
+
+            .carousel .switchLeft,
+            .carousel .switchRight{
+              color: white;
+              font-weight: bold;
+              height: 100%;
+              width: 45px;
+              line-height: 250px;
+              font-size: 25px;
+              text-align: center;
+              background-color: aqua;
+              font-family: sans-serif;
+              top: 0;
+              z-index: 3;
+            }
+
+            .carousel .switchLeft{
+              position: absolute;
+              left: -50px;
+            }
+
+            .carousel .switchRight{
+              position: absolute;
+              right: -50px;
+            }
+
+          </style>
+          <script>
+            const sliders = document.querySelector(".carouselbox") ;
+            var scrollPerClick;
+            var ImagePadding = 20;
+
+            showRandomAnime()
+
+            async function showRandomAnime(){
+              try{
+      let response = await fetch(`https://api.jikan.moe/v4/top/anime`);//1. Send http request and get response
+      let result = await response.json();//2. Get data from response;
+      console.log(result);
+
+      printTopAnime2(result,location);// 3. Do something with the data
+    
+    
+   }catch(e){
+       console.log(e);//catch and log any errors
+   }
+ }
+            
+
+
+          </script>
 
       </div>
       

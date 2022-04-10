@@ -14,6 +14,36 @@
 
     <link rel="stylesheet" href="style.css">
 
+        .nav-wrapper {
+          background-color: rgb(29, 78, 100);
+        }
+
+        body{
+        background-color: #191A19;
+        color: aliceblue;
+        background: 
+          conic-gradient(
+            #082032 90deg,
+            #191A19 90deg 180deg,
+            #082032 180deg 270deg,
+            #191A19 270deg
+        )
+        top left / 60px 60px repeat;
+        }
+
+        #key{
+          width: 200px;
+          background-color: aliceblue;
+        }
+
+        #modaltest{
+          color: blue;
+          background-color: antiquewhite;
+          width: 700px;
+          height: 800px;
+        }
+
+    </style>
 </head>
 <body>
   <nav class="nav-extended">
@@ -77,73 +107,17 @@
           <li><a href="manga.html">Manga</a></li>
     
       </ul>
-
-        
+      <!-- modal div -->
+      <div id="modal1" class="modal">
+      </div>
       <div class="container" id="top_anime" style="width: 100%;"> 
-        <main>
+       
+        <!-- <div id="modal1" class="modal">
 
-          <h1 style="text-align: center;">TOP RATED ANIME</h1>
-          <!--   
-                    (Displaying top anime)       -->
+        </div> -->
 
-          <div style="display:inline-block;vertical-align:top;">
-            <br><br><br>
-            <a href="animeinfo.html">
-            <img src="https://cdn.myanimelist.net/images/anime/1900/110097.jpg" alt="Ijiranaide, Nagatoro-san Image"/>
-          </a>
-          </div>
-            <div style="display:inline-block;">
-              <br><br><br>
-            <h5>#1. Ijiranaide, Nagatoro-san</h5>
-            <h5>Rating: 7.40/10  ★★★★☆</h5>
             
-            </div>
-            <div id="descriptionBox">
-              <p>Every day, Naoto Hachiouji is teased relentlessly by Hayase Nagatoro, a first year student he meets one day in the library while working on his manga. After reading his story and seeing his awkward demeanor, she decides from that moment on to toy with him, even calling him "Senpai" in lieu of using his real name.
-            
-                At first, Nagatoro's relentless antics are more bothersome than anything and leave him feeling embarrassed, as he is forced to cater to her whims. However, as they spend more time together, a strange sort of friendship develops between them, and Naoto finds that life with Nagatoro can even be fun. But one thing's for sure: his days will never be dull again.
-              </p>
-            </div>
-            
-            <div style="display:inline-block;vertical-align:top;">
-              <br><br><br>
-              <a href="animeinfo.html">
-              <img src="https://cdn.myanimelist.net/images/anime/1900/110097.jpg" alt="Ijiranaide, Nagatoro-san Image"/>
-            </a>
-            </div>
-              <div style="display:inline-block;">
-                <br><br><br>
-              <h5>#1. Ijiranaide, Nagatoro-san</h5>
-              <h5>Rating: 7.40/10  ★★★★☆</h5>
-              
-              </div>
-              <div id="descriptionBox">
-                <p >Every day, Naoto Hachiouji is teased relentlessly by Hayase Nagatoro, a first year student he meets one day in the library while working on his manga. After reading his story and seeing his awkward demeanor, she decides from that moment on to toy with him, even calling him "Senpai" in lieu of using his real name.
-              
-                  At first, Nagatoro's relentless antics are more bothersome than anything and leave him feeling embarrassed, as he is forced to cater to her whims. However, as they spend more time together, a strange sort of friendship develops between them, and Naoto finds that life with Nagatoro can even be fun. But one thing's for sure: his days will never be dull again.
-                </p>
-              </div>
-
-                  </div>
-                    <div>
-                      <div style= 'float: left;' id="image"></div>
-                      <div style='float: left;' id="image2"></div>
-                    </div>
-                    <div>
-                      <div id="poster1"></div>
-                      <div id="poster2"></div>
-                    </div>
-                    <br>
-                    <div id="top">
-
-                    </div>
-
-                    
-                    
-            
-          
-                  
-                  </main>
+       
       </div>
 
       
@@ -202,8 +176,6 @@
 
 
 
-
-
     <div id="anime_search">
 
       <div id="search_result">
@@ -224,6 +196,7 @@
       </div>
 
 
+
     </div>
 
     <script>
@@ -237,6 +210,7 @@
     </script>
     <script src="main.js"></script>
     <script src="search.js"></script>
+    <script src="modal.js"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     
 </body>
