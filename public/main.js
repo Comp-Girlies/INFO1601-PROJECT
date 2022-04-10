@@ -51,8 +51,8 @@ async function getTopAnime(location){
             <div class="row">
                 <div class="col s6 l3">
                     <div class="section"> 
-                            <img  src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                            <h5>#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                            <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
+                            <h5 >#hello${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
                             <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>
                     </div>
                 </div>`
