@@ -18,14 +18,14 @@
 <body>
   <nav class="nav-extended">
     <!-- Nav Bar -->
-    <div class="nav-wrapper">
+    <div id ="nav_wrap" class="nav-wrapper">
         <!-- Logo -->
       <img src="logo2.png" alt="">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li ><a href="index.html">Home</a></li>
-        <li class="active"><a href="anime.html">Anime</a></li>
-        <li><a href="manga.html">Manga</a></li>
+        <li ><a id="link" href="index.html">Home</a></li>
+        <li class="active"><a id="link" href="anime.html">Anime</a></li>
+        <li><a id="link" href="manga.html">Manga</a></li>
 
         <!-- Search Bar 
         <li >
@@ -35,9 +35,9 @@
     </div>
 --> 
 
-    <li><div class="nav-wrapper">
+    <li><div id="nav_wrap" class="nav-wrapper">
           <div class="input-field">
-          <input ondblclick="window.location.href='#anime_search' ; window.location.reload();"  id="search" type="search" required="" style="height: 200.600;height: 60px;">
+          <input ondblclick="window.location.href='#anime_search' ; window.location.reload();"  id="search" type="search" required="" style="height: 200.600;height: 75px;">
           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
           
           <i class="material-icons">close</i>

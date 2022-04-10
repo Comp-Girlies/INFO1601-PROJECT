@@ -14,14 +14,49 @@
     <link rel="stylesheet" href="style.css">
 
   
-     <link rel="stylesheet" href="style.css">
+     <!-- <link rel="stylesheet" href="style.css"> -->
      
+  
+     <style>
+       #carousel {
+        height: 250px;
+        width: 80%;
+        position: relative ;
+      }
+
+      #switchLeft_sliderButton
+      #switchRight_sliderButton{
+        color: white;
+        font-weight: bold;
+        height: 100%;
+        width: 45px;
+        line-height: 250px;
+        font-size: 25px;
+        text-align: center;
+        background-color: aqua;
+        font-family: sans-serif;
+        top: 0;
+        z-index: 3;
+      }
+
+      #switchLeft_sliderButton{
+        position: absolute;
+        left: -50px;
+      }
+
+      #switchRight_sliderButton{
+        position: absolute;
+        right: -50px;
+      } 
+
+    </style>
+
 </head>
 <body>
  
   <nav class="nav-extended">
     <!-- Nav Bar -->
-    <div class="nav-wrapper">
+    <div id="nav_wrap" class="nav-wrapper">
         <!-- Logo -->
       <a href="#" class="brand-logo">Aniratings</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -33,7 +68,7 @@
         <li><div class="nav-wrapper">
                 <form>
                     <div class="input-field">
-                    <input id="search" type="search" required="" style="height: 200.600;height: 60px;">
+                    <input id="search" type="search" required="" style="height: 200.600;height: 75px;">
                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                     
                     <i class="material-icons">close</i>
@@ -76,7 +111,7 @@
       </ul>
         
         
-      <main class="container"c>
+     
 
         <!-- PLEASE INSERT a heading 2 line below-->
       <div id="home" style="text-align: center;">
@@ -89,79 +124,18 @@
       <div id="home2">
         <h1>Hello</h1>
         <br><br><br>
-        
-        <!-- test test test test-->
 
-          <div class="carousel">
-            <div class="carouselbox">
+          <div  id ="carousel">
+            <div id="carouselbox">
               <!-- random data here-->
             </div>
 
-            <a class="switchLeft sliderButton"><</a>
-            <a class="switchRight sliderButton">></a>
-          </div>
-
-          <style>
-            .carousel {
-              height: 250px;
-              width: 80%;
-              position: relative ;
-            }
-
-            .carousel .switchLeft,
-            .carousel .switchRight{
-              color: white;
-              font-weight: bold;
-              height: 100%;
-              width: 45px;
-              line-height: 250px;
-              font-size: 25px;
-              text-align: center;
-              background-color: aqua;
-              font-family: sans-serif;
-              top: 0;
-              z-index: 3;
-            }
-
-            .carousel .switchLeft{
-              position: absolute;
-              left: -50px;
-            }
-
-            .carousel .switchRight{
-              position: absolute;
-              right: -50px;
-            }
-
-          </style>
-          <script>
-            const sliders = document.querySelector(".carouselbox") ;
-            var scrollPerClick;
-            var ImagePadding = 20;
-
-            showRandomAnime()
-
-            async function showRandomAnime(){
-              try{
-      let response = await fetch(`https://api.jikan.moe/v4/top/anime`);//1. Send http request and get response
-      let result = await response.json();//2. Get data from response;
-      console.log(result);
-
-      printTopAnime2(result,location);// 3. Do something with the data
-    
-    
-   }catch(e){
-       console.log(e);//catch and log any errors
-   }
- }
-            
-
-
-          </script>
-
+            <a id="switchLeft_sliderButton">This is a button</a>
+            <a id="switchRight_sliderButton">This is another button</a>
+          </div> 
       </div>
       
-      </main>
+    
 
 
     <script>
@@ -174,6 +148,30 @@
       });
     </script>
     <script src="main.js"></script>
+    <script>
+      const sliders = document.querySelector(".carouselbox") ;
+      var scrollPerClick;
+      var ImagePadding = 20;
+
+      showRandomAnime()
+
+        async function showRandomAnime(){
+                try{
+        let response = await fetch(`https://api.jikan.moe/v4/top/anime`);//1. Send http request and get response
+        let result = await response.json();//2. Get data from response;
+        console.log(result);
+
+        printTopAnime2(result,location);// 3. Do something with the data
+
+
+        }catch(e){
+        console.log(e);//catch and log any errors
+        }
+        }
+              
+
+
+    </script>
     
 </body>
 </html>

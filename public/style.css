@@ -20,3 +20,11 @@
         font-size: 25px;
         color: black
     }
+
+    #nav_wrap{
+      height: 75px;
+    }
+
+    #link{
+      height: 75px;
+    }
