@@ -126,6 +126,7 @@
             <div id="modaltest" class="modal-content">
               <div class="tab2">
               <button class="tablinks active" onclick="openInfo(event, 'anime_overview')">Anime Overview</button>
+              <button class="tablinks" onclick="openInfo(event, 'trailer')">Trailer</button>
               <button class="tablinks" onclick="openInfo(event, 'synopsis')">Synopsis</button>
               <button class="tablinks" onclick="openInfo(event, 'other_info')">Other Info</button>
               </div>
@@ -142,7 +143,14 @@
                </div>
 
               </div>
-          
+
+              <div id="trailer" class="tabcontent">
+              <div>
+              <iframe width="400" height="200" src="${AnimeData.data.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+              </div>
+
+
               <div id="synopsis" class="tabcontent">
                 <h5>Synopsis:</h5>
                 <p3>${AnimeData.data.synopsis}</p3>
