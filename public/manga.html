@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mod_tab.css">
 
 </head>
 <body>
@@ -29,10 +30,10 @@
     <!-- Nav Bar -->
     <div class="nav-wrapper">
         <!-- Logo -->
-      <a href="index.html" class="brand-logo">Aniratings</a>
+      <a href="index.html" class="brand-logo">Manga-Info</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a id="link" href="anime.html">Anime</a></li>
+        <li><a id="link" href="index.html">Anime</a></li>
         <li class="active"><a id="link" href="manga.html">Manga</a></li>
         <!-- Search Bar -->
         <li><div class="nav-wrapper">
@@ -50,7 +51,6 @@
     <div class="nav-content">
         <ul class="tabs tabs-transparent">
           <li class="tab"><a id="link2" href="#top_manga">Top Rated Manga</a></li>
-          <li class="tab"><a id="link2" href="#trending_manga">Trending Manga</a></li>
           <li class="tab"><a id="link2" href="#manga_search">   Manga Search</a></li>
           
 
@@ -72,47 +72,16 @@
               </div>
           </li>
           
-          <li class="active"><a href="anime.html">Anime</a></li>
+          <li class="active"><a href="index.html">Anime</a></li>
           <li><a href="manga.html">Manga</a></li>
     
       </ul>
 
-        
-        <div id="top_manga">   
-          <h1 style="text-align: center;">TOP RATED MANGA</h1>
-
-          <br><br><br>
-          <center>
-          <div class="row">
-            <div class="col s4">
-              <a href ="animeinfo.html">
-              <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" style="display:inline-block;"/>
-              <h5>Shingeki no Kyojin</h5>
-              <h5>Rating: 8.53/10  ★★★★☆</h5>
-            </a>
-            </div>
-            <div class="col s4">
-              <a href ="animeinfo.html">
-              <img src="https://cdn.myanimelist.net/images/anime/11/80167.jpg" style="display:inline-block;"/>
-              <h5>Saiki Kusuo no Ψ-nan</h5>
-              <h5>Rating: ★ 8.43</h5>
-            </a>
-            </div>
-            <div class="col s4">
-              <a href ="animeinfo.html">
-              <img src="https://cdn.myanimelist.net/images/anime/13/75587.jpg" style="display:inline-block;"/>
-              <h5>Nisekoi</h5>
-              <h5>Score: 7.6 / 10 </h5>
-            </a>
-            </div>
-      </div>
-    </center>
-
+        <div id="modal2" class="modal modal-fixed-footer">
         </div>
+        <div id="top_manga"></div>
 
-        <div id="trending_manga">
-            <h1 style="text-align: center;">TRENDING MANGA</h1>
-        </div>
+        <div id="trending_manga"></div>
 
         <div id="manga_search">
           <div id="search_result2">
@@ -143,6 +112,7 @@
       });
     </script>
     <script src="manga_main.js"></script>
+    <script src="modal.js"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     
 </body>

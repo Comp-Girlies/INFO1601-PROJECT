@@ -24,7 +24,6 @@ async function getTopManga(location){
 
  function print_manga(MangaData,location){
     let result = document.querySelector(location);
-    console.log(result);
     //add html code inside of result
     let html = '';// create html string
     for(let i = 0; i < MangaData.data.length-1; i = i+4){
@@ -70,7 +69,6 @@ function print_manga2(MangaData,location){
     for(let i = 0; i < MangaData.data.length-1; i = i+3){
 
             let sym_rating = printRating(MangaData.data[i].score);
-            console.log(sym_rating);
             //build html string
             html += `
             <div class="flex">
@@ -160,13 +158,9 @@ manga_keys.addEventListener('keyup',manga_searchFn);
 manga_keys2.addEventListener('keyup',manga_searchFn2);
 manga_keys3.addEventListener('keyup',manga_searchFn3);
 
-console.log(manga_keys.value);
-console.log(single_manga_key.value);
-
 function manga_searchFn(single_manga_key){
     if (single_manga_key.key === 'Enter') {
         query2 = manga_keys.value;
-        console.log(query2);
         getMangaData(query2);
     }
 }

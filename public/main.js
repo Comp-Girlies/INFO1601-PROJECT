@@ -91,7 +91,6 @@ async function getTrendingAnime(location){
 
 
 function searchFn(single_key){
-    console.log(anime_key.value);
     if (single_key.key === 'Enter') {
         query = anime_key.value;
         getAnimeData(query);
@@ -99,7 +98,7 @@ function searchFn(single_key){
 }
 
 function searchFn2(single_key2){
-    console.log(anime_key2.value);
+
     if (single_key2.key === 'Enter') {
         query = anime_key2.value;
         getAnimeData(query);
@@ -107,7 +106,7 @@ function searchFn2(single_key2){
 }
 
 function searchFn3(single_key3){
-    console.log(anime_key3.value);
+    
     if (single_key3.key === 'Enter') {
         query = anime_key3.value;
         getAnimeData(query);
@@ -187,7 +186,7 @@ function print_anime(AnimeData,location){
 
 function print_anime2(AnimeData,location){
     let result = document.querySelector(location);
-    console.log(result);
+    
     //add html code inside of result
     let html = '';// create html string
 
@@ -269,8 +268,8 @@ function printTopanime(AnimeData,location){
 
 
 function printTopanime2(AnimeData,location){
+    
     let result = document.querySelector(location);
-    console.log(result);
     //add html code inside of result
     let html = '';// create html string
 
