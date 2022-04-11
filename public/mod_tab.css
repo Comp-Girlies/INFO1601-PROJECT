@@ -50,4 +50,13 @@ background: #1f2833;
     font-size: 100px;
 }
 
+/* These classes style the outer layer of modal */
+
+.modal-content{
+    background-color: aquamarine;
+}
+
+.modal-footer{
+    background-color: aquamarine;
+}
 
