@@ -137,7 +137,7 @@
                     <h5>${AnimeData.data.title}</h5>     
                   </div>
                   <div class="col s8">   
-                      <iframe width="600" height="400" src="${AnimeData.data.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe width="400" height="200" src="${AnimeData.data.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                </div>
 
