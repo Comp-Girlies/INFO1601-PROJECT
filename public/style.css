@@ -36,7 +36,7 @@ body{
 
   #link2{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Oswald', sans-serif;
   }
 
   .nav-content{
@@ -56,3 +56,18 @@ body{
   .modalcontent{
     font-size: 14px;
   }
+
+  .flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.sections{
+    margin-left: 2%;
+    margin-right: 2%;
+    word-wrap: break-word;
+    width: 300px;
+    float: left;
+}
