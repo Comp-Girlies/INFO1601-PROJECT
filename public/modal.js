@@ -123,12 +123,12 @@
     console.log(AnimeData);
    
     modalhtml.innerHTML = `
-            <div id="modaltest" class="modal-content">
+            <div id="modaltest" class="modal-content" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;">
               <div class="tab2">
-              <button class="tablinks active" onclick="openInfo(event, 'anime_overview')">Anime Overview</button>
-              <button class="tablinks" onclick="openInfo(event, 'trailer')">Trailer</button>
-              <button class="tablinks" onclick="openInfo(event, 'synopsis')">Synopsis</button>
-              <button class="tablinks" onclick="openInfo(event, 'other_info')">Other Info</button>
+              <button id="tablink" class="tablinks active" onclick="openInfo(event, 'anime_overview')">Anime Overview</button>
+              <button id="tablink" class="tablinks" onclick="openInfo(event, 'trailer')">Trailer</button>
+              <button id="tablink" class="tablinks" onclick="openInfo(event, 'synopsis')">Synopsis</button>
+              <button id="tablink" class="tablinks" onclick="openInfo(event, 'other_info')">Other Info</button>
               </div>
           
               <div id="anime_overview" class="tabcontent" style="display: block;">
@@ -145,8 +145,8 @@
               </div>
 
               <div id="trailer" class="tabcontent">
-              <div>
-              <iframe width="400" height="200" src="${AnimeData.data.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div style="height: 90%;">
+              <iframe width="100%" height="100%" src="${AnimeData.data.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
               </div>
 
@@ -162,8 +162,8 @@
               <p>Tokyo is the capital of Japan.</p>
             </div>
               </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            <div id="modal-feet" class="modal-footer" >
+                <a id="close" href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
 
        `

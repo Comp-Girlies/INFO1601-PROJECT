@@ -43,20 +43,34 @@ width: 100%;
 overflow: hidden;
 border-top: none;
 background: #1f2833;
+height: 100%;
 }
 
 .tablinks{
     color: aliceblue;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 /* These classes style the outer layer of modal */
 
 .modal-content{
     background-color: aquamarine;
+    padding: 0px;
+
 }
 
-.modal-footer{
-    background-color: aquamarine;
+#modal-feet{
+    background-color: #3f689b;
+    padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;
+}
+
+#close{
+    color: white;
+}
+
+#modal-test{
+    width:250px; /* or whatever width you want. */
+   max-width:250px; /* or whatever width you want. */
+   display: inline-block;
 }
 
