@@ -39,26 +39,28 @@ async function getTopManga(location){
             console.log(sym_rating);
             //build html string
             html += `
+             <br>
             <div class="flex">
                 <div class="sections"> 
-                        <img onclick = "getAnimeInfo(${MangaData.data[i].mal_id})" src="${MangaData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                        <h5 >#${MangaData.data[i].rank}  ${MangaData.data[i].title}</h5>
-                        <h5>Rating: ${MangaData.data[i].score}/10  ${sym_rating}</h5>
+               
+                        <img onclick = "getAnimeInfo(${MangaData.data[i].mal_id})" src="${MangaData.data[i].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                        <h5 style="text-align:center;"> #${MangaData.data[i].rank}  ${MangaData.data[i].title}</h5>
+                        <h5 style="text-align:center;">Rating: ${MangaData.data[i].score}/10  ${sym_rating}</h5>
                 </div>
                 <div class="sections"> 
-                        <img onclick = "getAnimeInfo(${MangaData.data[i+1].mal_id})" src="${MangaData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
-                        <h5 >#${MangaData.data[i+1].rank}  ${MangaData.data[i+1].title}</h5>
-                        <h5>Rating: ${MangaData.data[i+1].score}/10  ${sym_rating}</h5>
+                        <img onclick = "getAnimeInfo(${MangaData.data[i+1].mal_id})" src="${MangaData.data[i+1].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                        <h5 style="text-align:center;">#${MangaData.data[i+1].rank}  ${MangaData.data[i+1].title}</h5>
+                        <h5 style="text-align:center;">Rating: ${MangaData.data[i+1].score}/10  ${sym_rating}</h5>
                 </div>
                 <div class="sections"> 
-                        <img onclick = "getAnimeInfo(${MangaData.data[i+2].mal_id})" src="${MangaData.data[i+2].images.jpg.image_url}" style="display:inline-block;"/>
-                        <h5 >#${MangaData.data[i+2].rank}  ${MangaData.data[i+2].title}</h5>
-                        <h5>Rating: ${MangaData.data[i+2].score}/10  ${sym_rating}</h5>
+                        <img onclick = "getAnimeInfo(${MangaData.data[i+2].mal_id})" src="${MangaData.data[i+2].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                        <h5 style="text-align:center;">#${MangaData.data[i+2].rank}  ${MangaData.data[i+2].title}</h5>
+                        <h5 style="text-align:center;">Rating: ${MangaData.data[i+2].score}/10  ${sym_rating}</h5>
                 </div>
                 <div class="sections"> 
-                        <img onclick = "getAnimeInfo(${MangaData.data[i+3].mal_id})" src="${MangaData.data[i+3].images.jpg.image_url}" style="display:inline-block;"/>
-                        <h5 >#${MangaData.data[i+3].rank}  ${MangaData.data[i+3].title}</h5>
-                        <h5>Rating: ${MangaData.data[i+3].score}/10  ${sym_rating}</h5>
+                        <img onclick = "getAnimeInfo(${MangaData.data[i+3].mal_id})" src="${MangaData.data[i+3].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                        <h5 style="text-align:center;">#${MangaData.data[i+3].rank}  ${MangaData.data[i+3].title}</h5>
+                        <h5 style="text-align:center;">Rating: ${MangaData.data[i+3].score}/10  ${sym_rating}</h5>
                 </div>
                 
             </div>    
