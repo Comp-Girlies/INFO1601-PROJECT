@@ -36,13 +36,7 @@
         <li class="active"><a id="link" href="anime.html">Anime</a></li>
         <li><a id="link" href="manga.html">Manga</a></li>
 
-        <!-- Search Bar 
-        <li >
-          <button onclick="window.location.href='#anime_search' ; window.location.reload();" >Button Name</button
-        </li>
-      </ul>
-    </div>
---> 
+        <!-- Search Bar--> 
 
     <li><div id="nav_wrap" class="nav-wrapper">
           <div class="input-field">
@@ -61,6 +55,7 @@
         <ul class="tabs tabs-transparent">
           <li class="tab"><a id="link2" href="#top_anime">Top Rated Anime</a></li>
           <li class="tab"><a id="link2" href="#trending_anime">Trending Anime</a></li>
+          <li class="tab"><a id="link2" href="#upcoming_anime">Upcoming Anime</a></li>
           <li class="tab"><a id="link2" href="#anime_search"> Anime Search</a></li>
 
         </ul>
@@ -89,24 +84,13 @@
       <!-- modal div -->
       <div id="modal1" class="modal modal-fixed-footer">
       </div>
-      <div class="container" id="top_anime" style="width: 100%;"> 
-       
-        <!-- <div id="modal1" class="modal">
 
-        </div> -->
-
-            
-       
-      </div>
+      <div id="top_anime"></div>
 
       
-    <div class="container" id="trending_anime">
-      
-
-    </div>
+    <div id="trending_anime"></div>
     
-
-
+    <div id="upcoming_anime"></div>
 
     <div id="anime_search">
 
@@ -126,8 +110,6 @@
         </center>
       </div>
 
-
-
     </div>
 
     <script>
@@ -140,7 +122,6 @@
       });
     </script>
     <script src="main.js"></script>
-    <script src="search.js"></script>
     <script src="modal.js"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     
