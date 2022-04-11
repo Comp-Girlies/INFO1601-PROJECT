@@ -1,5 +1,6 @@
 
-body {font-family: cursive;;
+body {
+ font-family: 'Oswald', sans-serif;
 color: rgba(255, 255, 255, 0.911);
 font-size: 18px;}
 
@@ -8,6 +9,7 @@ font-size: 18px;}
 overflow: hidden;
 border: 1px solid #1F2833;
 background-color: #3f689b;
+font-size: 25px;
 }
 
 /* Style the buttons inside the tab */
@@ -45,6 +47,7 @@ background: #1f2833;
 
 .tablinks{
     color: aliceblue;
+    font-size: 100px;
 }
 
 

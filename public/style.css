@@ -16,11 +16,11 @@ body{
 }
 
 .brand-logo{
-  font-family: 'Courier New', monospace;
+  font-family: 'Oswald', sans-serif;
 }
 
   body{
-      font-family: "Times New Roman", fantasy;
+      font-family: 'Oswald', sans-serif;
       font-size: 25px;
       color: white;
   }
@@ -45,4 +45,8 @@ body{
   .nav-extended{
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
+  }
+
+  .modalcontent{
+    font-size: 14px;
   }
