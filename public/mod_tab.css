@@ -1,13 +1,13 @@
 
 body {font-family: cursive;;
-color: aliceblue;
+color: rgba(255, 255, 255, 0.911);
 font-size: 18px;}
 
 /* Style the tab */
 .tab2 {
 overflow: hidden;
 border: 1px solid #1F2833;
-background-color: rgba(176,150,254,1) ;
+background-color: #3f689b;
 }
 
 /* Style the buttons inside the tab */
@@ -24,12 +24,12 @@ font-size: 17px;
 
 /* Change background color of buttons on hover */
 .tab2 button:hover {
-background-color: #f5f8ff;
+background-color: rgba(255, 255, 255, 0.733);
 }
 
 /* Create an active/current tablink class */
 .tab2 button.active {
-background-color: rgb(115, 75, 235);
+background-color: #031327;
 }
 
 /* Style the tab content */
@@ -40,8 +40,11 @@ border: 1px solid #1F2833;
 width: 100%;
 overflow: hidden;
 border-top: none;
-background: #0B0C10;
+background: #1f2833;
 }
 
+.tablinks{
+    color: aliceblue;
+}
 
 
