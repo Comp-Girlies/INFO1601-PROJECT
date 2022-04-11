@@ -71,3 +71,15 @@ body{
     width: 300px;
     float: left;
 }
+
+.sections:hover{
+  cursor:pointer;
+}
+
+#search4{
+  border-radius: 25px;
+}
+
+#search2{
+  border-radius: 25px;
+}
