@@ -26,6 +26,7 @@ anime_key3.addEventListener('keyup',searchFn3);
 
 //Functions
 
+// gets the info of the top anime and sends it to a print function
 async function getTopAnime(location){
     try{
       let response = await fetch(`https://api.jikan.moe/v4/top/anime`);//1. Send http request and get response
@@ -47,7 +48,7 @@ async function getTopAnime(location){
  }
 
 
-
+//gets info about trending anime and sends it to the print function
 async function getTrendingAnime(location){
     try{
       let response = await fetch(`https://api.jikan.moe/v4/seasons/now`);//1. Send http request and get response
@@ -68,6 +69,8 @@ async function getTrendingAnime(location){
    }
  }
 
+
+ //gets info about upcoming anime and sends it to the print function
  async function getUpcomingAnime(location){
     try{
         let response = await fetch(`https://api.jikan.moe/v4/seasons/upcoming`);//1. Send http request and get response
@@ -140,6 +143,7 @@ async function getAnimeData(query){
  }
 
 
+ // prints info in 4 tiles when the screen is normal sized
 function print_anime(AnimeData,location){
     let result = document.querySelector(location);
     console.log(result);
@@ -183,7 +187,7 @@ function print_anime(AnimeData,location){
     }
 }
 
-
+// prints info in 3 tiles when the screen is medium sized
 function print_anime2(AnimeData,location){
     let result = document.querySelector(location);
     
@@ -222,6 +226,8 @@ function print_anime2(AnimeData,location){
 
     }
 }
+
+//prints the top anime when the screen is normal sized
 
 function printTopanime(AnimeData,location){
     let result = document.querySelector(location);
@@ -266,7 +272,7 @@ function printTopanime(AnimeData,location){
     }
 }
 
-
+// prints the top anime when the screen is medium sized
 function printTopanime2(AnimeData,location){
     
     let result = document.querySelector(location);
@@ -306,6 +312,7 @@ function printTopanime2(AnimeData,location){
     }
 }
 
+//takes rating and returns a star rating
 function printRating(rating){
 
     let temp = rating;
