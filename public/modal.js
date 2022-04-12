@@ -21,37 +21,41 @@
               <button id="tablink" class="tablinks active" onclick="openInfo(event, 'anime_overview')">Anime Overview</button>
               <button id="tablink" class="tablinks" onclick="openInfo(event, 'trailer')">Trailer</button>
               <button id="tablink" class="tablinks" onclick="openInfo(event, 'synopsis')">Synopsis</button>
-              <button id="tablink" class="tablinks" onclick="openInfo(event, 'other_info')">Other Info</button>
               </div>
           
               <div id="anime_overview" class="tabcontent" style="display: block;">
                 <div class="row">
-                  <div class="col s4">
-                    <img src="${AnimeData.data.images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5>${AnimeData.data.title}</h5>     
-                  </div>
-               </div>
-
-              </div>
+                  <div class="col s12">
+                    <h5>${AnimeData.data.title}</h5> 
+                    <p>Japanese Title: ${AnimeData.data.title_japanese}<p> 
+                    <p>Episode Number: ${AnimeData.data.episodes}<p>
+                    <p>Duration: ${AnimeData.data.duration}<p> 
+                    <p>Age Rating: ${AnimeData.data.rating}<p>
+                    <p>Year: ${AnimeData.data.year}<p>
+                    <p>Airing Status: ${AnimeData.data.status}<p>
+                    <p>Aired From: ${AnimeData.data.aired.from}<p> 
+                    <p>Aired Till: ${AnimeData.data.aired.to}<p> 
+                    <p>Score: ${AnimeData.data.score} </p>
+                    <p>Scored by: ${AnimeData.data.scored_by} </p>  
+                    </div>
+                    </div>
+                    </div>
 
               <div id="trailer" class="tabcontent">
               <div style="height: 90%;">
               <iframe width="100%" height="100%" src="${AnimeData.data.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+              </div>
               </div>
 
 
               <div id="synopsis" class="tabcontent">
                 <h5>Synopsis:</h5>
                 <p3>${AnimeData.data.synopsis}</p3>
-
               </div>
           
-              <div id="other_info" class="tabcontent">
-              <h3>Tokyo</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
+            
               </div>
+
             <div id="modal-feet" class="modal-footer" >
                 <a id="close" href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
@@ -88,9 +92,18 @@
         
             <div id="manga_overview" class="tabcontent" style="display: block;">
               <div class="row">
-                <div class="col s4">
-                  <img src="${MangaData.data.images.jpg.image_url}" style="display:inline-block;"/>
-                  <h5>${MangaData.data.title}</h5>     
+                <div class="col s12">
+                  <h5>${MangaData.data.title}</h5> 
+                  <br>
+                  <p>Japanese Title: ${MangaData.data.title_japanese} </p>  
+                  <p>Number of Chapters: ${MangaData.data.chapters} </p>
+                  <p>Number of Volumes: ${MangaData.data.volumes} </p>
+                  <p>Publishing Status: ${MangaData.data.status} </p>
+                  <p>Published From: ${MangaData.data.published.from} </p>
+                  <p>Published To: ${MangaData.data.published.to} </p>
+                  <p>Score: ${MangaData.data.score} </p>
+                  <p>Scored by: ${MangaData.data.scored_by} </p>
+
                 </div>
              </div>
 
