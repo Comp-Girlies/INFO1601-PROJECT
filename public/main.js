@@ -161,24 +161,24 @@ function print_anime(AnimeData,location){
             <br>
             <div class="flex">
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+1}  ${AnimeData.data[i].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${i+1}  ${AnimeData.data[i].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+2}  ${AnimeData.data[i+1].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${i+2}  ${AnimeData.data[i+1].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+3}  ${AnimeData.data[i+2].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${i+3}  ${AnimeData.data[i+2].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+3].mal_id})" src="${AnimeData.data[i+3].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+4}  ${AnimeData.data[i+3].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+3].score}/10  ${sym_rating4}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+3].mal_id})" src="${AnimeData.data[i+3].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${i+4}  ${AnimeData.data[i+3].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+3].score}/10  ${sym_rating4}</h5>      
                 </div>
         
             </div>    
@@ -205,19 +205,19 @@ function print_anime2(AnimeData,location){
             <br>
             <div class="flex">
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+1}  ${AnimeData.data[i].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;" >#${i+1}  ${AnimeData.data[i].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+2}  ${AnimeData.data[i+1].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${i+2}  ${AnimeData.data[i+1].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${i+3}  ${AnimeData.data[i+2].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${i+3}  ${AnimeData.data[i+2].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
                 </div>
             </div>    
             `
@@ -246,24 +246,24 @@ function printTopanime(AnimeData,location){
             <br>
             <div class="flex">
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i+1].rank}  ${AnimeData.data[i+1].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i+1].rank}  ${AnimeData.data[i+1].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i+2].rank}  ${AnimeData.data[i+2].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i+2].rank}  ${AnimeData.data[i+2].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+3].mal_id})" src="${AnimeData.data[i+3].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i+3].rank}  ${AnimeData.data[i+3].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+3].score}/10  ${sym_rating4}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+3].mal_id})" src="${AnimeData.data[i+3].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i+3].rank}  ${AnimeData.data[i+3].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+3].score}/10  ${sym_rating4}</h5>      
                 </div>
         
             </div>    
@@ -290,19 +290,19 @@ function printTopanime2(AnimeData,location){
             <br>
             <div class="flex">
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i].mal_id})" src="${AnimeData.data[i].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i].rank}  ${AnimeData.data[i].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i].score}/10  ${sym_rating}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i+1].rank}  ${AnimeData.data[i+1].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+1].mal_id})" src="${AnimeData.data[i+1].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i+1].rank}  ${AnimeData.data[i+1].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+1].score}/10  ${sym_rating2}</h5>      
                 </div>
                 <div class="sections"> 
-                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display:inline-block;"/>
-                    <h5 >#${AnimeData.data[i+2].rank}  ${AnimeData.data[i+2].title}</h5>
-                    <h5>Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
+                    <img onclick = "getAnimeInfo(${AnimeData.data[i+2].mal_id})" src="${AnimeData.data[i+2].images.jpg.image_url}" style="display: block; margin-left: auto; margin-right: auto;"/>
+                    <h5 style="text-align:center;">#${AnimeData.data[i+2].rank}  ${AnimeData.data[i+2].title}</h5>
+                    <h5 style="text-align:center;">Rating: ${AnimeData.data[i+2].score}/10  ${sym_rating3}</h5>      
                 </div>
             </div>    
             `
