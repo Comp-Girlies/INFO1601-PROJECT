@@ -21,7 +21,7 @@ async function getTopManga(location){
    }
  }
 
-
+ // prints info in 4 tiles when the screen is normal sized
  function print_manga(MangaData,location){
     let result = document.querySelector(location);
     //add html code inside of result
@@ -61,6 +61,7 @@ async function getTopManga(location){
     result.innerHTML = html;//add html string to DOM
 }
 
+ // prints info in 3 tiles when the screen is medium sized
 function print_manga2(MangaData,location){
     let result = document.querySelector(location);
     
@@ -98,7 +99,7 @@ function getMangaInfo(){
 }
 
 
-
+//takes rating and returns a star rating
 function printRating(rating){
 
     let temp = rating;
