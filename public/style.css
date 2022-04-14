@@ -76,6 +76,10 @@ body{
   cursor:pointer;
 }
 
+.page-footer{
+  background-color: #031327;
+}
+
 #search4{
   border-radius: 25px;
   padding: 0 3.5rem 0 1.5rem;
