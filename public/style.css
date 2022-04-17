@@ -46,6 +46,7 @@ body{
   .nav-wrapper{
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
+    height: 75px;
   }
 
   .nav-extended{
@@ -88,4 +89,10 @@ body{
 #search2{
   border-radius: 25px;
   padding: 0 3.5rem 0 1.5rem;
+}
+
+#web_logo{
+  height: 71px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
