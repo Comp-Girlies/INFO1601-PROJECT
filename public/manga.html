@@ -30,7 +30,7 @@
     <!-- Nav Bar -->
     <div class="nav-wrapper" style="height: 75px;">
         <!-- Logo -->
-        <a href="manga.html">
+        <a href="index.html">
           <img id="web_logo" src="new_logo75.png" alt="Anime-Info">
         </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -63,22 +63,24 @@
 
         <!-- Mobile Side Nav Code -->
         <ul class="sidenav" id="mobile-demo">
+          
           <li>
-              <div class="nav-wrapper">
-                  <div class="input-field">
-                  <input id="search6" ondblclick="window.location.href='#manga_search' ; window.location.reload();" placeholder="Search" type="search" required="" style="height: 40px;">
-                  <label class="label-icon" style="height: 60px;" for="search"><i class="material-icons">search</i></label>
-                  
-                  <i class="material-icons">close</i>
-                  </div>
+              <div class="nav-wrapper" style="height:fit-content; color: #59D2C3;">
+                <h2 style="text-align: center; background-color: #031327; margin: 0px;">Ani-Info</h2>
+                <div class="input-field">
+                <input id="search6" ondblclick="window.location.href='#manga_search' ; window.location.reload();" placeholder="Search" type="search" required="" style="height: 40px;">
+                <label class="label-icon" style="height: 60px;" for="search"><i class="material-icons">search</i></label>
+                
+                <i class="material-icons">close</i>
+                </div>
               </div>
           </li>
-  <main>        
-          <li class="active"><a href="index.html">Anime</a></li>
-          <li><a href="manga.html">Manga</a></li>
-    
+        
+          <li ><a href="index.html" style="color: white;">Anime</a></li>
+          <li class="active" ><a href="manga.html" style="color: white;">Manga</a></li>  
       </ul>
 
+  <main> 
         <div id="modal2" class="modal modal-fixed-footer">
         </div>
         <div id="top_manga">
@@ -117,8 +119,33 @@
         </div>
   </main>   
   
-  <footer class="footer">
-
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Find us:</h5>
+          <ul>
+            
+            <li><a class="grey-text text-lighten-3" href="https://github.com/Comp-Girlies">Github: Comp-Girlies</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Email: compgirlies@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">3rd party resources used:</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://materializecss.com/">Materialize.css</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://jikan.moe/">Jikan Api v4</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://lordicon.com/">Lordicon</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://fonts.google.com/">Google Fonts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022 Copyright Comp Girlies
+      </div>
+    </div>
   </footer>
     <script>
          M.AutoInit();

@@ -97,3 +97,11 @@ body{
   padding-bottom: 2px;
 }
 
+a:hover{
+  color: #59D2C3;
+}
+
+.sidenav{
+  background-color: #1f2833;
+
+}
