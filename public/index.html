@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="mod_tab.css">
 
 </head>
-<body>
-  <nav class="nav-extended">
+<body style="margin-top: 110px;">
+  <nav class="nav-extended" style="position: fixed; top: 0; z-index: 5;">
     <!-- Nav Bar -->
     <div id ="nav_wrap" class="nav-wrapper">
         <!-- Logo -->
@@ -97,7 +97,7 @@
                 trigger="loop"
                 colors="primary:#08A88A,secondary:#16c79e"
                 stroke="55"
-                style="width:250px;height:250px; ">
+                style="width:250px;height:250px; z-index: -1; ">
               </lord-icon>
             </center>
           </div>
@@ -138,12 +138,13 @@
 
           <div id="search_result" >
             <center style="height: 100vh;">
+              <br>
               <h3>Search for Anime</h3>
               <lord-icon
               src="https://cdn.lordicon.com/msoeawqm.json"
               trigger="loop"
               delay="750"
-              style="width:250px;height:250px">
+              style="width:250px;height:250px;">
               </lord-icon>
               <div class="input-field">
                 <input id="search2" placeholder="Search" type="search" required="" style="background-color:aliceblue; width:50%; height: 50px;">

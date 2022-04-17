@@ -1,5 +1,7 @@
 .nav-wrapper {
-  background-color: #031327; ; 
+  background-color: #031327;
+  position: fixed;
+  top: 0;
 }
 
 .nav-extended{
